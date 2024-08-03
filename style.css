@@ -1,0 +1,38 @@
+* {
+  text-transform: uppercase;  
+  list-style: none;
+  margin: 0;
+}
+.cont {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: gray;
+    color: rgb(255, 255, 255);
+    transform: translateX(-85%);
+}
+.cont:hover {
+    transform: translateX(0);
+    transition: transform 300ms ease-in;
+}
+h2 {
+   position: absolute; 
+   top: 50%;
+   right: -55px;
+   transform: rotate(90deg);
+}
+.cont:hover h2{
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+.ul {
+    padding-top: 60px;
+}
+.li {
+    padding-bottom: 10px;
+}
+.li::before {
+   content: "🔸";
+}
